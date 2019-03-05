@@ -20,6 +20,10 @@ h1 {
     text-align:  center;
 }
 
+section {
+    min-height: 100vh;
+}
+
 
 
 /**** FRONTPAGE *****/
@@ -39,7 +43,56 @@ h1 {
 .bannerpage h1 {
     color: white;
     font-size: 55px;
+    box-shadow: 
 }
+
+.bannerpage button {
+    margin-top: 50px;
+    font-family: "montserrat";
+    font-size: 28px;
+    color: white;
+    padding: 20px 50px;
+    transition-duration: .8s;
+    background-color: rgba(0,0,0, 0.0);
+    border: 3px solid;
+}
+
+.bannerpage button:hover {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+@media (max-width: 860px) {
+    .bannerpage button {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 660px) {
+    .bannerpage button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 414px) {
+    .bannerpage button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 375px) {
+    .bannerpage button {
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 320px) {
+    .bannerpage button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
 
 /*
 .bannerpage button {
@@ -70,6 +123,12 @@ h1 {
 @media (max-width: 860px) {
     .bannerpage h1 {
         font-size: 35px;
+    }
+}
+
+@media (max-width: 680px) {
+    .bannerpage h1 {
+        font-size: 30px;
     }
 }
 
