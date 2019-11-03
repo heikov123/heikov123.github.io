@@ -16,12 +16,12 @@
     <section class="banner-section" id="scrollTo">
         <div class="bannerpage">
             <!--NAVBAR-->
-            <div class="navbar">
-                <a href="#home" id="hom">Home</a>
-                <a href="#profile" id="prof">Profile</a>
-                <a href="#skills" id="skill">Skills</a>
-                <a href="#projects" id="project">Projects</a>
-                <a href="#contact" id="cont">Contact</a>
+            <div class="navbar" id="navbar">
+                <a href="#home" onclick="scrollingHome()">Home</a>
+                <a href="#profile" onclick="scrollingProfile()">Profile</a>
+                <a href="#skills" onclick="scrollingSkills()">Skills</a>
+                <a href="#projects" onclick="scrollingProjects()">Projects</a>
+                <a href="#contact" onclick="scrollingContact()">Contact</a>
             </div>
             <h1>Hi, I am <span>Heiko Valli</span></h1>
             <h1>Welcome to my e-portfolio</h1>
@@ -34,9 +34,16 @@
         <div class="profile">
             <div class="info">
                 <h1>ABOUT ME</h1>
-                    <p>My name is <span>Heiko</span> and I'm 22-year-old <span>web development</span> student in Tartu vocational education
-                    centre. I <span>graduated</span> high school in 2016 and took a two year break from studying. Over the course of those years i worked at Telia as a <span>phone sales agent</span> for a couple of months. From 2017 to 2018 I worked at Replace OÜ as a <span>smart device functionality tester.</span>  </p>
-                    <p>So in the summer of 2018, I decided to go back to <span>school.</span> I found <span>web development</span> really interesting and decided to enrol at Tartu vocational education centre to become a good web developer. Besides coding I like to take part in various activities such as <span>folk dancing</span> and <span>playing basketball</span> </p>  
+                <p>My name is <span>Heiko</span> and I'm 22-year-old <span>web development</span> student in Tartu
+                    vocational education
+                    centre. I <span>graduated</span> high school in 2016 and took a two year break from studying. Over
+                    the course of those years i worked at Telia as a <span>phone sales agent</span> for a couple of
+                    months. From 2017 to 2018 I worked at Replace OÜ as a <span>smart device functionality
+                        tester.</span> </p>
+                <p>So in the summer of 2018, I decided to go back to <span>school.</span> I found <span>web
+                        development</span> really interesting and decided to enrol at Tartu vocational education centre
+                    to become a good web developer. Besides coding I like to take part in various activities such as
+                    <span>folk dancing</span> and <span>playing basketball</span> </p>
             </div>
         </div>
     </section>
@@ -78,40 +85,41 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/mysql.png" alt="mysql">
+                    <img src="img/angular.png" alt="angular">
                     <div class="card-info">
-                        <p>MySQL</p>
+                        <p>Angular</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!------ PROJECTS ------>
+    <!------ PROJECTS ------>
     <section class="project-section" id="scrollTo4">
         <div class="projects">
             <h1>PROJECTS</h1>
             <div class="work">
                 <div class="project">
                     <img src="img/project-1.png">
-                    <div class="proj-info"  onclick="">
-                        <p>School project which won third place in a "Aasta tegija 2019" profession competition. Project is made with my classmate</p>
-                        <a href="http://veebimeister7.ikt.khk.ee/aasta_tegija/" target="blank"><button>Look</button></a>
+                    <div class="proj-info" onclick="">
+                        <p>Client project</p>
+                        <a href="https://plekisell.ee/" target="blank"><button>Look</button></a>
                     </div>
                 </div>
                 <div class="project-2">
                     <img src="img/project-2.png">
-                    <div class="proj-info-2"  onclick="">
-                        <p>Ongoing E-store team project.</p>
+                    <div class="proj-info-2" onclick="">
+                        <p>E-store team project for school</p>
                         <a href="http://tellitaist.ee/" target="blank"><button>Look</button></a>
+                    </div>
                 </div>
-            </div>    
-        </div>
+            </div>
     </section>
-<!------ CONTACT ------>
+    <!------ CONTACT ------>
     <section class="contact-section">
         <div class="contact" id="scrollTo5">
             <h1>CONTACT</h1>
-            <p>I am looking for an <span>internship</span>. If you believe I might be a good <span>candidate</span> for that position, let me
+            <p>I am looking for an <span>internship</span>. If you believe I might be a good <span>candidate</span> for
+                that position, let me
                 know.</p>
             <div class="contact-info">
                 <div class="mail">
@@ -122,17 +130,16 @@
                     <img src="img/call.png" alt="call">
                     <p>+372 5817 3537</p>
                 </div>
-            </div> 
+            </div>
             <div class="contact-info-2">
                 <div class="fb">
                     <a href="https://www.facebook.com/heiko.valli" target="blank"><img src="img/fb.png" alt="fb"></a>
                     <p>Facebook</p>
-                </div>   
-        </div> 
+                </div>
+            </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <script src="js/script.js"></script>
 </body>
 

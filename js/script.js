@@ -1,54 +1,50 @@
-$(document).ready(function(){
-    $('#hom').click(function(){
-    var scrollTo = $('#scrollTo');
-    $('html,body').stop().animate({
-    scrollTop: scrollTo.offset().top
-    }, 1000);
-})
+const scrollToHome = document.getElementById('scrollTo');
+const scrollToProfile = document.getElementById('scrollTo2');
+const scrollToSkills = document.getElementById('scrollTo3');
+const scrollToProjects = document.getElementById('scrollTo4');
+const scrollToContact = document.getElementById('scrollTo5');
 
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-        if (scroll >= 600) {
-            $(".navbar").addClass("navbar2");
-        } else {
-            $(".navbar").removeClass("navbar2");
-        }  
+let scroll = window.scrollY;
+let navbarClass = document.getElementById("navbar")
+
+function scrollingHome() {
+    scrollToHome.scrollIntoView({
+        behavior: 'smooth'
     });
-})
+}
 
-$(document).ready(function(){
-    $('#prof').click(function(){
-        var scrollTo = $('#scrollTo2');
-        $('html,body').stop().animate({
-            scrollTop: scrollTo.offset().top
-        }, 1000);
-    })
-});
+function scrollingProfile() {
+    scrollToProfile.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
 
-$(document).ready(function(){
-    $('#skill').click(function(){
-        var scrollTo = $('#scrollTo3');
-        $('html,body').stop().animate({
-           scrollTop: scrollTo.offset().top
-       }, 1000);
-    })
-})
 
-$(document).ready(function(){
-    $('#project').click(function(){
-        var scrollTo = $('#scrollTo4');
-        $('html,body').stop().animate({
-           scrollTop: scrollTo.offset().top
-       }, 1000);
-    })
-})
+function scrollingSkills() {
+    scrollToSkills.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
 
-$(document).ready(function(){
-    $('#cont').click(function(){
-        var scrollTo = $('#scrollTo5');
-        $('html,body').stop().animate({
-           scrollTop: scrollTo.offset().top
-       }, 1000);
-    })
+function scrollingProjects() {
+    scrollToProjects.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+function scrollingContact() {
+    scrollToContact.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+
+window.addEventListener('scroll', function (e) {
+    scroll = window.scrollY;
+
+    if (scroll > 600) {
+        navbarClass.classList.add("navbar2");
+    } else {
+        navbarClass.classList.remove("navbar2");
+    }
 })
-    
